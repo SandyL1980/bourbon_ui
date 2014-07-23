@@ -11,11 +11,35 @@
  * file per style scope.
  *
  *= require_self
+ *= require slick
+  *= require animate
  */
 
  @import 'bourbon';
  @import 'base/grid-settings';
  @import "neat";
  @import "base/base";
+ @import "components"; //bourbon components and refills
+ @import "flatui"; //css from flatui designmodo
+ @import "welcomes";
+ @import "pages";
 
- 
+
+$margin: 10px;
+
+body {
+	margin: 0;
+}
+
+.margin20 {
+	margin-top: $margin + 10px;
+}
+
+.padding20 {
+	padding-top: $margin + 40px;
+}
+
+.clearfix {
+	clear: both;
+}
+
